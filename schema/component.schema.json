@@ -16,7 +16,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Format acceptat",
           "default": "both",
           "enum": [
             "full-width",
@@ -29,16 +29,16 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Drag the slider to make your choice and select Submit.",
+          "title": "Instrucțiuni",
+          "default": "Trageți glisorul pentru a face alegerea și selectați Trimitere.",
           "_adapt": {
             "translatable": true
           }
         },
         "ariaQuestion": {
           "type": "string",
-          "title": "ARIA question",
-          "description": "This will be read out by screen readers instead of reading the 'Display title', 'Body' & 'Instruction' fields when focusing on the options. To be clear and concise, ensure the text encompasses only the question associated.",
+          "title": "Întrebare ARIA",
+          "description": "Aceasta va fi citită de cititoarele de ecran în loc să citească câmpurile 'Titlu de afișare', 'Corp' și 'Instrucțiune' atunci când se concentrează pe opțiuni. Pentru a fi clar și concis, asigurați-vă că textul cuprinde doar întrebarea asociată.",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -46,8 +46,8 @@
         },
         "ariaScaleName": {
           "type": "string",
-          "title": "ARIA scale name",
-          "description": "This will be read out by screen readers when focusing on the scale input (slider handle). An appropriate name should give context to which the scale is a measurement of.",
+          "title": "Numele scalei ARIA",
+          "description": "Aceasta va fi citită de cititoarele de ecran atunci când se concentrează pe intrarea scalei (glisor). Un nume adecvat ar trebui să ofere contextul pentru care scara este o măsură.",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -55,52 +55,52 @@
         },
         "_attempts": {
           "type": "number",
-          "title": "Allowed attempts",
-          "description": "How many attempts the learner is allowed",
+          "title": "Încercări permise",
+          "description": "Câte încercări sunt permise cursantului",
           "default": 1
         },
         "_canShowModelAnswer": {
           "type": "boolean",
-          "title": "Enable correct answer toggle",
-          "description": "Allow the user to view the 'model answer' if they answer the question incorrectly",
+          "title": "Activați comutarea răspunsului corect",
+          "description": "Permiteți utilizatorului să vizualizeze 'modelul de răspuns' dacă răspunde incorect la întrebare",
           "default": true
         },
         "_canShowCorrectness": {
           "type": "boolean",
-          "title": "Enable to display correctness",
-          "description": "If enabled, this replaces the associated 'model answer' toggle button and displays correctness directly on the component",
+          "title": "Activați pentru a afișa corectitudinea",
+          "description": "Dacă este activat, asta înlocuiește butonul de comutare 'răspuns model' asociat și afișează corectitudinea direct pe componentă",
           "default": false
         },
         "_canShowFeedback": {
           "type": "boolean",
-          "title": "Enable feedback",
+          "title": "Activați feedback",
           "default": true
         },
         "_canShowMarking": {
           "type": "boolean",
-          "title": "Enable marking",
+          "title": "Activați marcarea",
           "default": true
         },
         "_shouldDisplayAttempts": {
           "type": "boolean",
-          "title": "Show number of remaining attempts",
+          "title": "Afișați numărul de încercări rămase",
           "default": false
         },
         "_questionWeight": {
           "type": "number",
-          "title": "Question weight",
-          "description": "How much this question is worth",
+          "title": "Importanța întrebării",
+          "description": "Cât valorează această întrebare",
           "default": 1
         },
         "_recordInteraction": {
           "type": "boolean",
-          "title": "Record interaction",
-          "description": "If disabled, recording the user's answer(s) to this question to cmi.interactions on the LMS will be disabled for this component only",
+          "title": "Înregistrarea interacțiunii",
+          "description": "Dacă este dezactivată, înregistrarea răspunsurilor utilizatorului la această întrebare la cmi.interactions pe LMS va fi dezactivată numai pentru această componentă",
           "default": true
         },
         "labelStart": {
           "type": "string",
-          "title": "Scale start label",
+          "title": "Eticheta de pornire a scalei",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -108,7 +108,7 @@
         },
         "labelEnd": {
           "type": "string",
-          "title": "Scale end label",
+          "title": "Eticheta de final a scalei",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -116,25 +116,25 @@
         },
         "_scaleStart": {
           "type": "number",
-          "title": "Scale start number",
+          "title": "Numărul de început al scalei",
           "default": 1
         },
         "_scaleEnd": {
           "type": "number",
-          "title": "Scale end number",
+          "title": "Numărul de sfârșit al scalei",
           "default": 10
         },
         "_scaleStep": {
           "type": "number",
-          "title": "Scale step",
-          "description": "The amount the scale should increment by",
+          "title": "Pasul scalei",
+          "description": "Valoarea cu care ar trebui să se incrementeze",
           "default": 1,
           "exclusiveMinimum": 0
         },
         "scaleStepPrefix": {
           "type": "string",
-          "title": "Prefix to add to each slider step",
-          "description": "For instance, a '$' can be used as a prefix to indicate currency in dollars (ex. $100)",
+          "title": "Prefix de adăugat la fiecare pas de glisor",
+          "description": "De exemplu, un '$' poate fi folosit ca prefix pentru a indica moneda în dolari (de exemplu, 100 USD)",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -142,8 +142,8 @@
         },
         "scaleStepSuffix": {
           "type": "string",
-          "title": "Suffix to add to each slider step",
-          "description": "For instance, a 'V' can be used as a suffix to indicate voltage (ex. 4V)",
+          "title": "Sufix de adăugat la fiecare pas al glisorului",
+          "description": "De exemplu, un 'V' poate fi folosit ca sufix pentru a indica voltajul (ex. 4V)",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -151,51 +151,51 @@
         },
         "_correctAnswer": {
           "type": "string",
-          "title": "Correct answer",
-          "description": "Correct answer on the scale",
+          "title": "Răspuns corect",
+          "description": "Răspuns corect pe scară",
           "default": ""
         },
         "_correctRange": {
           "type": "object",
-          "title": "Correct range",
+          "title": "Interval corect",
           "default": {},
           "properties": {
             "_bottom": {
               "type": "number",
-              "title": "Minimum",
-              "description": "Correct bottom range answer on the scale -- ignored when 'Correct answer' is set",
+              "title": "Minim",
+              "description": "Răspunsul corect pentru intervalul inferior pe scală - ignorat atunci când este setat 'Răspuns corect'",
               "default": 0
             },
             "_top": {
               "type": "number",
-              "title": "Maximum",
-              "description": "Correct top range answer on the scale -- ignored when 'Correct answer' is set",
+              "title": "Maxim",
+              "description": "Răspuns corect în intervalul superior pe scală -- ignorat când 'Răspuns corect' este setat",
               "default": 0
             }
           }
         },
         "_showScaleIndicator": {
           "type": "boolean",
-          "title": "Show position indicator",
-          "description": "Controls whether a position indicator on the scale should be shown or not",
+          "title": "Afișează indicatorul de poziție",
+          "description": "Controlează dacă trebuie afișat sau nu un indicator de poziție pe scală",
           "default": true
         },
         "_showNumber": {
           "type": "boolean",
-          "title": "Show number on indicator",
-          "description": "Controls whether the position number on the indicator should be shown or not",
+          "title": "Afișați numărul pe indicator",
+          "description": "Controlează dacă numărul poziției de pe indicator trebuie afișat sau nu",
           "default": true
         },
         "_showScale": {
           "type": "boolean",
-          "title": "Show scale",
-          "description": "Controls whether to show the lines and numbers of the scale or not",
+          "title": "Arată scala",
+          "description": "Controlează dacă se afișează sau nu liniile și numerele scalei",
           "default": true
         },
         "_showScaleNumbers": {
           "type": "boolean",
-          "title": "Show scale numbers",
-          "description": "Controls whether the numbers on the scale should be shown or not",
+          "title": "Afișarea numerelor de pe scală",
+          "description": "Controlează dacă numerele de pe scală trebuie afișate sau nu",
           "default": true
         },
         "_feedback": {
@@ -205,8 +205,8 @@
           "properties": {
             "title": {
               "type": "string",
-              "title": "Title",
-              "description": "Title text for the feedback",
+              "title": "Titlu",
+              "description": "Textul titlului pentru feedback",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -214,8 +214,8 @@
             },
             "altTitle": {
               "type": "string",
-              "title": "Alternative Feedback Title",
-              "description": "Text read out by screen readers if no visual title is included",
+              "title": "Titlu alternativ pentru feedback",
+              "description": "Text citit de cititoarele de ecran dacă nu este inclus niciun titlu vizual",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -223,8 +223,8 @@
             },
             "correct": {
               "type": "string",
-              "title": "Correct feedback",
-              "description": "Correct answer feedback for this question",
+              "title": "Feedback corect",
+              "description": "Feedback pentru răspuns corect la această întrebare",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -233,13 +233,13 @@
             },
             "_incorrect": {
               "type": "object",
-              "title": "Incorrect",
+              "title": "Incorect",
               "default": {},
               "properties": {
                 "final": {
                   "type": "string",
-                  "title": "Default incorrect feedback",
-                  "description": "Incorrect answer feedback for the final attempt",
+                  "title": "Feedback incorect implicit",
+                  "description": "Feedback de răspuns incorect pentru încercarea finală",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -248,8 +248,8 @@
                 },
                 "notFinal": {
                   "type": "string",
-                  "title": "Retry feedback",
-                  "description": "Incorrect answer feedback for any attempt apart from the last attempt. If you leave this blank, the default incorrect feedback will be used instead",
+                  "title": "Feedback pentru reîncercare",
+                  "description": "Feedback de răspuns incorect pentru orice încercare în afară de ultima încercare. Dacă lăsați acest lucru necompletat, va fi folosit în schimb feedback-ul incorect implicit",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -262,17 +262,17 @@
         },
         "_buttons": {
           "type": "object",
-          "title": "Button overrides",
+          "title": "Înlocuirea butoanelor",
           "default": {},
           "properties": {
             "_submit": {
               "type": "object",
-              "title": "Submit",
+              "title": "Trimite",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -280,7 +280,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Eticheta ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -295,7 +295,7 @@
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -303,7 +303,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Eticheta ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -313,12 +313,12 @@
             },
             "_showCorrectAnswer": {
               "type": "object",
-              "title": "Show correct answer",
+              "title": "Afișează răspunsul corect",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -326,7 +326,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Eticheta ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -336,12 +336,12 @@
             },
             "_hideCorrectAnswer": {
               "type": "object",
-              "title": "Hide correct answer",
+              "title": "Ascunde răspunsul corect",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -349,7 +349,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Eticheta ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -359,12 +359,12 @@
             },
             "_showFeedback": {
               "type": "object",
-              "title": "Show feedback",
+              "title": "Afișează feedback",
               "default": {},
               "properties": {
                 "buttonText": {
                   "type": "string",
-                  "title": "Button text",
+                  "title": "Text buton",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -372,7 +372,7 @@
                 },
                 "ariaLabel": {
                   "type": "string",
-                  "title": "ARIA label",
+                  "title": "Eticheta ARIA",
                   "default": "",
                   "_adapt": {
                     "translatable": true
@@ -382,7 +382,7 @@
             },
             "remainingAttemptsText": {
               "type": "string",
-              "title": "Remaining attempts label",
+              "title": "Eticheta de încercări rămase",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -390,7 +390,7 @@
             },
             "remainingAttemptText": {
               "type": "string",
-              "title": "Final attempt label",
+              "title": "Etichetă de încercare finală",
               "default": "",
               "_adapt": {
                 "translatable": true

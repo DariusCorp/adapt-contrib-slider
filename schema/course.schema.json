@@ -18,29 +18,29 @@
               "properties": {
                 "_slider": {
                   "type": "object",
-                  "title": "Slider",
+                  "title": "Glisor",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Slider. Respond to the question by selecting a value on the scale and then submit.",
+                      "title": "Zonă ARIA",
+                      "default": "Glisor. Răspundeți la întrebare selectând o valoare de pe scală și apoi trimiteți.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "labelStart": {
                       "type": "string",
-                      "title": "Scale start ARIA label",
-                      "default": "Start of the scale",
+                      "title": "Eticheta ARIA de pornire a scalei",
+                      "default": "Începutul scalei",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "labelEnd": {
                       "type": "string",
-                      "title": "Scale end ARIA label",
-                      "default": "End of the scale",
+                      "title": "Etichetă ARIA pentru capătul scalei",
+                      "default": "Sfârșitul scalei",
                       "_adapt": {
                         "translatable": true
                       }
